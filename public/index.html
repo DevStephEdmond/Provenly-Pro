@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Provenly Pro helps teams collaborate seamlessly, track progress in real-time, and ship projects 10x faster. Start free today."
+    />
+    <meta
+      name="keywords"
+      content="project management, team collaboration, task management, productivity"
+    />
+
+    <!-- Open Graph  -->
+    <meta
+      property="og:title"
+      content="Provenly Pro - Project Management Made Simple"
+    />
+    <meta
+      property="og:description"
+      content="Manage projects 10x faster with Provenly Pro"
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Provenly Pro - Project Management Made Simple"
+    />
+    <meta name="twitter:description" content="Manage projects 10x faster" />
+    <title>Provenly Pro - Project Management Made Simple</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* Custom animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in-up {
+        animation: fadeInUp 0.6s ease-out;
+      }
+      /* Smooth scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.8;
+        }
+      }
+
+      .project-card {
+        animation: pulse 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <span class="text-lg sm:text-2xl font-bold text-blue-600"
+              >Provenly Pro</span
+            >
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#features"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Features</a
+            >
+            <a
+              href="#pricing"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Pricing</a
+            >
+            <a
+              href="#testimonials"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Testimonials</a
+            >
+          </div>
+          <div
+            class="flex items-center space-x-2 sm:space-x-4 text-[14px] sm:text-base"
+          >
+            <button class="text-gray-700 hover:text-blue-600 transition">
+              Sign In
+            </button>
+            <button
+              class="bg-blue-600 text-white px-2 py-0.5 sm:px-6 sm:py-2 rounded-lg hover:bg-blue-700 transition"
+            >
+              Start Free Trial
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="fade-in-up">
+            <h1
+              class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6"
+            >
+              Manage Projects
+              <span class="text-blue-600">10x Faster</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+              Provenly Pro helps teams collaborate seamlessly, track progress in
+              real-time, and ship projects on schedule. No complexity, just
+              results.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#pricing"
+                class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg"
+              >
+                Get Started Free
+              </a>
+              <button
+                class="bg-white text-gray-700 px-8 py-4 rounded-lg text-lg font-semibold border-2 border-gray-200 hover:border-blue-600 transition"
+              >
+                Watch Demo
+              </button>
+            </div>
+            <p class="text-sm text-gray-500 mt-4">
+              ✓ No credit card required • Free 14-day trial
+            </p>
+          </div>
+          <div class="fade-in-up">
+            <div
+              class="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8 shadow-2xl"
+            >
+              <div class="bg-white rounded-lg p-6 mb-4 shadow">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-sm font-semibold text-gray-700"
+                    >Project Dashboard</span
+                  >
+                  <span
+                    class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded"
+                    >Live</span
+                  >
+                </div>
+                <div class="space-y-2">
+                  <div
+                    class="bg-blue-50 p-3 rounded flex items-center justify-between"
+                  >
+                    <span class="text-sm text-gray-700">Website Redesign</span>
+                    <span class="text-xs text-blue-600 font-semibold">75%</span>
+                  </div>
+                  <div
+                    class="bg-purple-50 p-3 rounded flex items-center justify-between"
+                  >
+                    <span class="text-sm text-gray-700">Mobile App Launch</span>
+                    <span class="text-xs text-purple-600 font-semibold"
+                      >45%</span
+                    >
+                  </div>
+                  <div
+                    class="bg-green-50 p-3 rounded flex items-center justify-between"
+                  >
+                    <span class="text-sm text-gray-700"
+                      >Marketing Campaign</span
+                    >
+                    <span class="text-xs text-green-600 font-semibold"
+                      >90%</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-3 gap-3">
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                  <div class="text-2xl font-bold text-blue-600">24</div>
+                  <div class="text-xs text-gray-600">Active Tasks</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                  <div class="text-2xl font-bold text-purple-600">12</div>
+                  <div class="text-xs text-gray-600">Team Members</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                  <div class="text-2xl font-bold text-green-600">98%</div>
+                  <div class="text-xs text-gray-600">On Time</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Everything You Need to Succeed
+          </h2>
+          <p class="text-xl text-gray-600">
+            Powerful features that make project management effortless
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-blue-200 hover:shadow-lg transition"
+          >
+            <div
+              class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Task Management
+            </h3>
+            <p class="text-gray-600">
+              Create, assign, and track tasks with intuitive drag-and-drop
+              boards. Set priorities, deadlines, and dependencies with ease.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-blue-200 hover:shadow-lg transition"
+          >
+            <div
+              class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-purple-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Team Collaboration
+            </h3>
+            <p class="text-gray-600">
+              Real-time updates, comments, and file sharing keep everyone on the
+              same page. Eliminate endless email chains.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-blue-200 hover:shadow-lg transition"
+          >
+            <div
+              class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Analytics & Reports
+            </h3>
+            <p class="text-gray-600">
+              Visualize progress with beautiful dashboards. Generate reports in
+              seconds to keep stakeholders informed.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div
+            class="bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-blue-200 hover:shadow-lg transition"
+          >
+            <div
+              class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-yellow-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Time Tracking</h3>
+            <p class="text-gray-600">
+              Track time spent on tasks automatically. Understand where your
+              team's efforts go and optimize workflows.
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div
+            class="bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-blue-200 hover:shadow-lg transition"
+          >
+            <div
+              class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-red-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Calendar Integration
+            </h3>
+            <p class="text-gray-600">
+              Sync with Google Calendar, Outlook, and more. Never miss a
+              deadline or meeting again.
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div
+            class="bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-blue-200 hover:shadow-lg transition"
+          >
+            <div
+              class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Enterprise Security
+            </h3>
+            <p class="text-gray-600">
+              Bank-level encryption, SSO, and granular permissions keep your
+              data safe and compliant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Simple, Transparent Pricing
+          </h2>
+          <p class="text-xl text-gray-600">
+            Start free, upgrade when you're ready
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Starter Plan -->
+          <div
+            class="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:shadow-xl transition"
+          >
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+            <p class="text-gray-600 mb-6">Perfect for small teams</p>
+            <div class="mb-6">
+              <span class="text-5xl font-bold text-gray-900">$0</span>
+              <span class="text-gray-600">/month</span>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-green-500 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700">Up to 5 team members</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-green-500 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700">10 projects</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-green-500 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700">Basic task management</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-green-500 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700">5GB storage</span>
+              </li>
+            </ul>
+            <button
+              class="w-full bg-gray-100 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-200 transition"
+            >
+              Get Started Free
+            </button>
+          </div>
+
+          <!-- Pro Plan (Featured) -->
+          <div
+            class="bg-blue-600 rounded-2xl p-8 border-2 border-blue-600 shadow-2xl transform scale-105 relative"
+          >
+            <div
+              class="absolute top-0 right-0 bg-yellow-400 text-gray-900 px-4 py-1 rounded-bl-lg rounded-tr-lg text-sm font-bold"
+            >
+              POPULAR
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Pro</h3>
+            <p class="text-blue-100 mb-6">For growing teams</p>
+            <div class="mb-6">
+              <span class="text-5xl font-bold text-white">$29</span>
+              <span class="text-blue-100">/month</span>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-blue-200 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-white">Unlimited team members</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-blue-200 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-white">Unlimited projects</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-blue-200 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-white">Advanced analytics</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-blue-200 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-white">100GB storage</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-blue-200 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-white">Priority support</span>
+              </li>
+            </ul>
+            <button
+              class="w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
+            >
+              Start Free Trial
+            </button>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div
+            class="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:shadow-xl transition"
+          >
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
+            <p class="text-gray-600 mb-6">For large organizations</p>
+            <div class="mb-6">
+              <span class="text-5xl font-bold text-gray-900">$99</span>
+              <span class="text-gray-600">/month</span>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-green-500 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700">Everything in Pro</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-green-500 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700">SSO & SAML</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-green-500 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700">Unlimited storage</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-green-500 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700">Dedicated account manager</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-green-500 mr-3 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700">Custom integrations</span>
+              </li>
+            </ul>
+            <button
+              class="w-full bg-gray-100 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-200 transition"
+            >
+              Contact Sales
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Loved by Teams Worldwide
+          </h2>
+          <p class="text-xl text-gray-600">
+            See what our customers have to say
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-400">★★★★★</div>
+            </div>
+            <p class="text-gray-700 mb-6">
+              "Provenly Pro transformed how our team works. We cut project
+              delivery time by 40% and everyone stays aligned effortlessly."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="assets/img/testimonial-1.webp"
+                class="w-12 h-12 rounded-full mr-4 bg-cover"
+                alt=""
+              />
+              <div>
+                <div class="font-bold text-gray-900">Sarah Chen</div>
+                <div class="text-sm text-gray-600">
+                  Product Manager, TechCorp
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-400">★★★★★</div>
+            </div>
+            <p class="text-gray-700 mb-6">
+              "The best project management tool we've used. Intuitive interface,
+              powerful features, and incredible support team."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="assets/img/testimonial-2.webp"
+                class="w-12 h-12 rounded-full mr-4 bg-cover"
+                alt=""
+              />
+              <div>
+                <div class="font-bold text-gray-900">Marcus Johnson</div>
+                <div class="text-sm text-gray-600">CEO, StartupHub</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-400">★★★★★</div>
+            </div>
+            <p class="text-gray-700 mb-6">
+              "We tried 5 different tools before finding Provenly Pro. Finally,
+              something that just works without the learning curve."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="assets/img/testimonial-3.webp"
+                class="w-12 h-12 rounded-full mr-4 bg-cover"
+                alt=""
+              />
+              <div>
+                <div class="font-bold text-gray-900">Emily Rodriguez</div>
+                <div class="text-sm text-gray-600">
+                  Creative Director, DesignCo
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-blue-600">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          Ready to Transform Your Workflow?
+        </h2>
+        <p class="text-xl text-blue-100 mb-8">
+          Join 10,000+ teams already shipping faster with Provenly Pro
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition shadow-lg"
+          >
+            Start Free Trial
+          </button>
+          <button
+            class="bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition border-2 border-blue-500"
+          >
+            Schedule Demo
+          </button>
+        </div>
+        <p class="text-sm text-blue-200 mt-6">
+          ✓ 14-day free trial • No credit card required • Cancel anytime
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-white text-xl font-bold mb-4">Provenly Pro</h3>
+            <p class="text-gray-400 text-sm">
+              The modern way to manage projects and collaborate with your team.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-4">Product</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#" class="hover:text-white transition">Features</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Integrations</a>
+              </li>
+              <li><a href="#" class="hover:text-white transition">API</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-4">Company</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white transition">About</a></li>
+              <li><a href="#" class="hover:text-white transition">Blog</a></li>
+              <li>
+                <a href="#" class="hover:text-white transition">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-4">Legal</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#" class="hover:text-white transition">Privacy</a>
+              </li>
+              <li><a href="#" class="hover:text-white transition">Terms</a></li>
+              <li>
+                <a href="#" class="hover:text-white transition">Security</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500"
+        >
+          © 2025 Provenly Pro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
